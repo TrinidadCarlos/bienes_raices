@@ -1,0 +1,93 @@
+.blog-testimonial{
+    margin: $separacion auto;
+    @include tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+.blog{
+    @include tablet{
+        flex:0 1 65%;
+    }
+}
+
+.entrada-blog{
+    background-color: $gris;
+    padding: $separacion - 3;
+    border-radius: .3rem;
+    @include tablet{
+        align-items: center;
+        @include grid(2, 1rem);
+    }
+}
+
+.entrada-blog{
+    margin: $separacion - 3 0;
+    // background-color: red;
+    img{
+            border-radius: .4rem;
+        }
+}
+
+.texto-entrada{
+    text-align:center;
+    a{
+        text-transform: capitalize;
+        color: $grisOscuro;
+        
+        h3{
+            font-weight: $bold;
+            @include tablet{
+                margin: 0;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            height: .3rem;
+            background:linear-gradient(to right, $gris, $grisOscuro);
+            
+        }
+    }
+
+    .by{
+        margin:$separacion - 3 0;
+        text-transform: capitalize;
+        font-weight: $bold;
+        color: darken($amarillo, 20);
+        span{
+            color: $grisOscuro;
+            font-weight: $regular;
+        }
+    }
+
+    .blog-descripcion{
+        @include tablet{
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+.testimonial{
+    @include tablet{
+        flex:0 1 30%;
+    }
+    blockquote{
+        margin: $separacion - 3 $separacion - 4;
+        padding: 2rem;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        background-color: darken($amarillo, 10);
+
+        p{
+            margin-top: $separacion - 3;
+            font-weight: $bold;
+            text-align: right;
+            font-style: italic;
+        }
+    }
+}

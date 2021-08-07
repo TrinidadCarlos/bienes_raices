@@ -1,0 +1,55 @@
+.no-webp .imagen-banner{
+    background:  url('../img/encuentra.jpg') no-repeat center/cover fixed;
+}
+
+.webp .imagen-banner{
+    background: url('../img/encuentra.webp') no-repeat center/cover fixed;
+}
+
+.imagen-banner{
+    margin-top: $separacion;
+    height: 50rem;
+    padding: $separacion 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+.detalles-banner{
+    .titulo-banner, .texto-banner{
+        font-weight: $bold;
+        color: $blanco;
+    }
+    .titulo-banner{
+        text-transform: capitalize;
+        color: $amarillo;
+    }
+    .texto-banner{
+        margin: 0 auto;
+        color: $gris;
+        @include tablet{
+            width: 70rem;
+        }
+    }
+
+    .enlace-contacto{
+        display: block;
+        margin-top: $separacion - 2;
+        padding: $separacion - 4.5  $separacion - 3;
+        border-radius: .4rem;
+        font-weight: $bold;
+        font-size: 2.3rem;
+        text-align: center;
+        color:$grisOscuro;
+        background:linear-gradient(to right, $amarillo, $blanco);
+
+        @include tablet{
+            width: 20rem;
+        }
+
+        &:hover{
+            background:linear-gradient(to right, $blanco, $amarillo);
+        }
+
+    }
+}

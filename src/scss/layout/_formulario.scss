@@ -1,0 +1,94 @@
+.formulario {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
+
+    fieldset {
+        margin-bottom: $separacion - 1;
+        border-radius: 1rem;
+        background: $gris;
+
+        legend {
+            font-weight: $bold;
+            font-size: 2.4rem;
+        }
+    }
+
+    label {
+        display: block;
+        margin: $separacion - 4 0;
+        font-weight: $bold;
+        color: $grisOscuro;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: $separacion - 4;
+        border-radius: .7rem;
+        border: transparent;
+        resize: none;
+    }
+}
+
+.formulario-personales,
+.formulario-propiedad {
+
+    input,
+    textarea {
+        &:focus {
+            appearance: none;
+            border: .3rem solid $gris;
+            outline: none;
+        }
+
+    }
+}
+
+.formulario-tipoContacto {
+    p {
+        margin: $separacion - 3 0;
+    }
+
+    .form-contacto {
+        @include tablet {
+
+            label {
+                display: inline;
+            }
+        }
+
+        input {
+            height: 2rem;
+            width: 10%;
+        }
+    }
+}
+
+.contenedor-submit {
+    text-align: center;
+
+    .submit-formulario {
+        color: $gris;
+        background: $grisOscuro;
+        font-size: 2rem;
+        font-weight: $bold;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background: $gris;
+            color: $grisOscuro;
+            border: .1rem solid $grisOscuro;
+        }
+
+        @include tablet {
+            width: 30%;
+        }
+    }
+}

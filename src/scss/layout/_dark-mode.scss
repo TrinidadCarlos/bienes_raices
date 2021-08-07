@@ -1,0 +1,86 @@
+.dark-mode-settings {
+    transition:  all .3s ease-in-out;
+    background-color: darken($grisOscuro, 10);
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    blockquote,
+    legend {
+        color: $gris;
+    }
+
+// AJUSTES A LA SECCION DE ANUNCIOS
+    .contenedor-anuncios {
+        .enlace-anuncios {
+            color: $gris;
+            border: .1rem solid $gris;
+
+            &:hover {
+                background-color: $gris;
+                color: $grisOscuro;
+            }
+        }
+    }
+
+    .anuncio {
+        h3 {
+            color: $gris;
+        }
+        background-color: $grisOscuro;
+        border:.1rem solid $gris;
+        
+        .enlace-anuncio {
+            border: .1rem solid $gris;
+        }
+    }
+
+    .icono-anuncio {
+        filter: invert(100%);
+    }
+
+    //AJUSTE A LA SECCIÓN DE DETALLES DE CADA ANUNCIO
+    .anuncio-detalle{
+        h3{
+            color: $gris;
+        }
+        .precio{
+            color: $grisOscuro;
+        }
+    }
+
+    // AJUSTES A LA SECCIÓN DE BLOG
+    .entrada-blog{
+        background-color: $grisOscuro;
+        .by{
+            span{
+                color: $gris;
+            }
+        }
+    }
+
+    //AJUSTES A LA SECCIÓN DE TESTIMONIALES
+    .testimonial{
+        blockquote , p{
+            color: $grisOscuro;
+        }
+    }
+
+    //AJUSTES A LA SECCIÓN DEL CONTACTO
+    .formulario{
+
+        fieldset {
+            background: $grisOscuro;
+        }
+        label{
+            color: $gris;
+        }
+        .submit-formulario{
+            border:.2rem solid $gris;
+        }
+    }
+
+
+}

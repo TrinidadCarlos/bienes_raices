@@ -1,0 +1,21 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+    h2, h1{
+        font-weight: $bold;
+
+        &::after{
+            content:"";
+            display: block;
+            margin: 0 auto;
+            max-width: 40rem;
+            height: .5rem;
+            background:linear-gradient(to right, $amarillo, $gris);
+
+        }
+    }
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+

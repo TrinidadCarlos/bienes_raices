@@ -1,0 +1,56 @@
+.no-webp .inicio{
+    background: url('../img/header.webp') no-repeat center/cover ;
+}
+
+.webp .inicio{
+    background: url('../img/header.webp') no-repeat center/cover ;
+}
+
+.inicio{
+    .contenido-header{
+        height: 100vh;
+    }
+}
+
+
+.header{
+    padding: $separacion - 2 0;
+    background-color: $grisOscuro;
+
+}
+
+.contenido-header{
+    display: flex; 
+    height:inherit;
+    flex-flow:column wrap;
+    justify-content: space-between;
+    color: $blanco;
+
+
+    .barra{
+        @include tablet{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .navegacion{
+                font-size: 2rem;
+                max-width:40rem;
+                flex:0 1 40%;
+            }
+            .logo{
+                max-width:40rem;
+                flex:0 1 40%;
+
+            }
+        }
+
+    }
+    .header-banner{
+        font-weight: $bold;
+        @include tablet{
+            width: 60%;
+        }
+    }
+
+  
+}

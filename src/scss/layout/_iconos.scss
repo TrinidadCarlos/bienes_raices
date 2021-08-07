@@ -1,0 +1,21 @@
+.iconos-nosotros{
+    margin-top: $separacion - 1;
+    @include tablet{
+        @include grid(3, $separacion - 3);
+    }
+}
+.icono{
+       &:not(:last-child){
+        margin-bottom: $separacion - 3;
+    }
+    text-align: center;
+
+    img{
+        max-height: 10rem;
+    }
+    h3{
+        text-transform: uppercase;
+    }
+
+
+}

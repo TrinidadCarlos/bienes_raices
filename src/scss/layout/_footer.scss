@@ -1,0 +1,25 @@
+.footer {
+    padding: $separacion - 2 0;
+    background-color: $grisOscuro;
+    
+    .contenedor-footer {
+
+        .navegacion{
+            margin-bottom: $separacion - 4;
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+        }
+
+        @include tablet {
+            .navegacion{
+                max-width: $separacion * 7;
+                width: 40%;
+                font-size: 2rem;
+            }
+        }
+        .copyright{
+            text-align: center;
+        }
+    }
+}
